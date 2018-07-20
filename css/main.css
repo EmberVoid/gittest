@@ -108,9 +108,8 @@ textarea {
       background-color: var(--primary);
     }
 
-    p{
+    p {
       margin: 0;
-      width: 50%;
     }
 
     nav div div{
@@ -138,6 +137,11 @@ textarea {
 
     aside{
         background-color: var(--highlight);
+        text-align: center;
+    }
+
+    aside ul {
+        list-style-position: inside;
     }
 
     .border{
@@ -147,8 +151,8 @@ textarea {
 
     /*Queries*/
     .col {
-        padding: 30px;
         float: left;
+        padding: 30px;
       }
       
       .col6 {
@@ -162,11 +166,18 @@ textarea {
       .col4 {
         width: 33.33333333333333333%;
       }
-      
+
       .col9 {
         width: 75%;
       }
-
+      
+      /* Media queries */
+      @media (max-width: 1200px) {
+          .col {
+              float: none;
+              width: 100%;
+            }
+        }
 
 
 
